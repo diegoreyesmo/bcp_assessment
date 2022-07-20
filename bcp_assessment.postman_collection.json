@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "f01fff1f-dd3d-4abf-909e-6c69bf22a0cf",
+		"name": "bcp_assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getExchangeRate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/exchange/getExchangeRate?originCurrency=PEN&finalCurrency=USD",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"exchange",
+						"getExchangeRate"
+					],
+					"query": [
+						{
+							"key": "originCurrency",
+							"value": "PEN"
+						},
+						{
+							"key": "finalCurrency",
+							"value": "USD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllExchangeRate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/exchange/getAllExchangeRate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"exchange",
+						"getAllExchangeRate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
